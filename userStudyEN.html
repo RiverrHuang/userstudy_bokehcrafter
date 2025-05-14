@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        img, video {
+            max-width: 100%;
+            max-height: 75vh;
+        }
+        td {
+            padding: 10px;
+            width: 50%;
+        }
+        .row1 {
+            height: 60vh; /* 第一行高度 */
+        }
+        .row2 {
+            height: 40vh; /* 第二行高度 */
+        }
+        input{
+            height: 30px;
+            width: 30px;
+            font-size: 30px;
+            vertical-align: text-bottom;
+            margin-bottom: -2px;
+        }
+        b{
+            font-size: 20px;
+            color: black;
+        }
+        button {
+            max-width: 300px;
+            min-width: 200px;
+            max-height: 60px;
+            min-height: 40px;
+            font-size: 40px;
+            color: black;
+        }
+        h3 {
+            margin-block-start: 1px;
+            margin-block-end: 1px;
+        }
+        .label {
+            font-size: 20px;
+            color: black;
+        }
+        .shadow {
+            width: 133px;
+            height: 133px;
+            background-color: black;
+            opacity: .2;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: none;
+            /*cursor: move;*/
+            pointer-events: none;
+        }
+        table{
+            width: 100%;
+        }
+
+    </style>
+    <title>UserStudy</title>
+
+</head>
+<body>
+
+<div id="div_1">
+</div>
+
+<div id="div_2">
+    <ul>
+        <li style="font-size: 40px">
+            <!-- 感谢您的参与 -->
+            <!-- <br> -->
+            <a id="submit"></a>
+        </li>
+    </ul>
+</div>
+
+<!-- <img id="img0" hidden> -->
+
+<table border="1" cellspacing="10" id="tb" frame=void>
+    <tr class="row1">
+        <td valign="middle" align="center" id="td_1" onclick="colorChange(1)">
+            <video id="img1" src="./videos/ours/0.mov" muted autoplay="autoplay" loop=”loop” width="100%"></video>
+            <h3 id="a1" style="margin-top: 7px;">Method 1</h3>
+        </td>
+        <td valign="middle" align="center" id="td_2" onclick="colorChange(2)">
+            <video id="img2" src="./videos/ours/0.mov" muted autoplay="autoplay" loop=”loop” width="100%"></video>
+            <h3 id="a2" style="margin-top: 7px;">Method 2</h3>
+        </td>
+    </tr>
+    <tr class="row2">
+        <td valign="middle" colspan="1">
+            <div class="label" id="txt">
+                <div align="center"><b><font size="6">Rules</font></b></div>
+                <br>
+                <li>
+                    Compare <b style="color: red">Method 1</b> and <b style="color: red">Method 2</b>，and click the better one that should be consistent overall and more stable at the edges. Especially when focusing on the background area, the edges of the foreground objects that are vignetted should have a transparent shape without flickering or artefacts; Click again to cancel. <b>If it is hard to judge, don't select anyone and click "Next"</b>.
+                </li>
+                <br>
+                <li>
+                    If you want to end this test, you can click "Submit". For data collection, you have to answer at least 10 questions before you click "Submit";
+                </li>
+                <br>
+                <li>
+                    Please do not refresh the page, or the data will be invalidated.
+                </li>
+            </div>
+            <br>
+
+        </td>
+        <td valign="middle" align="center">
+            <button onclick="next()">Next</button>
+            <br>
+            <br>
+            <button onclick="submitTB()" id="submitBT" style="color: gray;">Submit</button>
+            <br>
+            <div id="page" style="font-size: 35px; margin-top: 10px;"></div>
+            <div class="label" id="tip_table_2" style="color: black">（Answer at least 10 question）</div>
+        </td>
+    </tr>
+</table>
+
+
+</body>
+</html>
+
+<!-- <script type="text/javascript" src="config.js"></script> -->
+<script type="text/javascript" src="tool.js"></script>
+<!-- <script type="text/javascript" src="nameList.js"></script> -->
+<script type="text/javascript" src="global.js"></script>
+<script type="text/javascript" src="mainFunction.js"></script>
+
+<script>
+    init()
+    start()
+
+</script>
