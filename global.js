@@ -2,7 +2,7 @@
 // var testMode = location.search.split('=')[2]
 
 // var path_submit = 'http://221.232.55.91:10002/'                                                  // 公网 ip
-var path_submit = 'http://47.110.148.233:20002/'                                                  // 公网 ip
+var path_submit = 'http://47.110.148.233:10001/'                                                  // 公网 ip
 var path = location.href.substring(0,location.href.lastIndexOf('/')) + '/videos/'                // 图片文件路径
 
 // 图片名称
