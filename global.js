@@ -42,7 +42,7 @@ for(var i=0;i<allTestLength;i++){
     allTestIDList.push(i)
 }
 var maxPage = 30  // 50，图片总数量
-var minPage = 10  // 10，最少提交数量
+var minPage = 5  // 10，最少提交数量
 // 当前测试图像的序号
 var id = 0
 // 保存测试者测试数据的id
