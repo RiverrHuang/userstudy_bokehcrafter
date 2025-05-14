@@ -7,9 +7,9 @@ var path = location.href.substring(0,location.href.lastIndexOf('/')) + '/videos/
 
 // 图片名称
 var nameList = '001,002,003,004,005,006,007,008,009,010,011,012,013,014,015,016,017,018,019,020,021,022,023,024,025,026,027,028,029,030'
-var numfunc = 8                                                                                 // 方法数量
-var testFunc = ['BokehMe','DeepFocus','DeepLens','MPIB','RVR','SteRefo','VBR', 'ours']            // 方法名称
-var testIDs = [1,2,3,4,5,6,7,8]    // 方法序号
+var numfunc = 7                                                                                 // 方法数量
+var testFunc = ['BokehMe','DeepLens','MPIB','RVR','SteRefo','VBR', 'ours']            // 方法名称
+var testIDs = [1,2,3,4,5,6,7]    // 方法序号
 
 // if (testMode == 1) {
 //     path = location.href.substring(0,location.href.lastIndexOf('/')) + '/user_study_websites/'
